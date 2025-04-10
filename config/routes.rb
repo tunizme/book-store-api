@@ -3,8 +3,8 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :products
 
-      post 'register', to: 'authentication#register'
-      post 'login', to: 'authentication#login'
+      post "register", to: "authentication#register"
+      post "login", to: "authentication#login"
     end
   end
 end

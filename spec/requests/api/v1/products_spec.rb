@@ -22,7 +22,6 @@ RSpec.describe 'Products API', type: :request do
 
       expect(response).to have_http_status(:ok)
     end
-
   end
 
   describe 'POST /api/v1/products' do

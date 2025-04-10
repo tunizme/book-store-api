@@ -20,7 +20,7 @@ RSpec.describe 'Authentication', type: :request do
       expect(response).to have_http_status(:unprocessable_entity)
       expect(response_body).to eq(
                                  {
-                                   "errors" => ["Password can't be blank", "Email can't be blank"]
+                                   "errors" => [ "Password can't be blank", "Email can't be blank" ]
                                  }
                                )
     end

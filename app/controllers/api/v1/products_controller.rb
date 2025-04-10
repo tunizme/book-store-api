@@ -55,8 +55,8 @@ module Api
       end
 
       def authorize_admin
-        unless @current_user&.role == 'admin'
-          render json: { errors: [ 'Forbidden: Admin only' ] }, status: :forbidden
+        unless @current_user&.role == "admin"
+          render json: { errors: [ "Forbidden: Admin only" ] }, status: :forbidden
         end
       end
     end
